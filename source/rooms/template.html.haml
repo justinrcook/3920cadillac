@@ -1,0 +1,21 @@
+- content_for(:title, room[:name].titleize)
+
+.container
+  %h1= room[:name].titleize
+
+  - unless room['photos'].blank?
+    = partial 'carousel', locals: { path: '/images/rooms', photos: room['photos'] }
+
+    %hr
+    .photos
+      -# Set a counter so the correct photo can be shown, needs to be
+      -# outside the outer loop so that is isn't reset so it will count all the
+      -# photos not just each group of four.
+      - photo_id = 0
+      - room['photos'].each_slice(4) do |photos|
+        .row
+          - photos.each_with_index do |photo, i|
+            .col-xs-6.col-md-3
+              = link_to "/images/rooms/#{photo}", class: 'thumbnail', data: { target: '#carousel', slide_to: photo_id } do
+                = image_tag thumbnail_url("rooms/#{photo}", :small), class: 'img-responsive'
+            - photo_id = (photo_id + 1)

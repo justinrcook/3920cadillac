@@ -1,0 +1,17 @@
+/ Navbar
+/ ==================================================
+%nav{ role: "navigation" }
+  .container
+    %h1= link_to 'Home for Sale', '/', class: 'brand'
+
+    .row
+      .info
+        %p
+          %span.price $172,900
+          &middot;
+          %span.address 3920 Cadillac Drive, Waterloo 50701
+      .links
+        %ul
+          %li= link_to 'Map', 'https://goo.gl/maps/j0N7g'
+          %li= link_to 'Street View', 'https://goo.gl/maps/TnxcC'
+    %hr

@@ -1,0 +1,100 @@
+rooms:
+  - name: house
+  - name: bedroom
+    photos:
+      - bedroom1.jpg
+      - bedroom2.jpg
+      - bedroom3.jpg
+      - bedroom4.jpg
+      - bedroom5.jpg
+  - name: office
+    photos:
+      - office1.jpg
+      - office2.jpg
+      - office3.jpg
+  - name: dining-room
+    photos:
+      - diningRoom1.jpg
+      - diningRoom2.jpg
+      - diningRoom3.jpg
+      - diningRoom4.jpg
+      - diningRoom5.jpg
+  - name: bathroom
+    photos:
+      - bathroom1.jpg
+      - bathroom2.jpg
+      - bathroom3.jpg
+  - name: second-bedroom
+    photos:
+      - secondBedroom1.jpg
+      - secondBedroom2.jpg
+      - secondBedroom3.jpg
+      - secondBedroom4.jpg
+  - name: kitchen
+    photos:
+      - kitchen1.jpg
+      - kitchen2.jpg
+      - kitchen3.jpg
+      - kitchen4.jpg
+      - kitchen5.jpg
+  - name: living-room
+    photos:
+      - livingRoom1.jpg
+      - livingRoom2.jpg
+      - livingRoom3.jpg
+      - livingRoom4.jpg
+      - livingRoom5.jpg
+      - livingRoom6.jpg
+      - livingRoom7.jpg
+  - name: laundry-room
+    photos:
+      - laundryRoom1.jpg
+      - laundryRoom2.jpg
+      - laundryRoom3.jpg
+      - laundryRoom4.jpg
+      - laundryRoom5.jpg
+  - name: family-room
+    photos:
+      - familyRoom1.jpg
+      - familyRoom2.jpg
+      - familyRoom3.jpg
+      - familyRoom4.jpg
+      - familyRoom5.jpg
+  - name: multi-use-room
+    photos:
+      - multiUseRoom1.jpg
+      - multiUseRoom2.jpg
+      - multiUseRoom3.jpg
+      - multiUseRoom4.jpg
+      - multiUseRoom5.jpg
+      - multiUseRoom6.jpg
+      - multiUseRoom7.jpg
+      - multiUseRoom8.jpg
+      - multiUseRoom9.jpg
+      - multiUseRoom10.jpg
+  - name: porch-and-yard
+    photos:
+      - outdoors1.jpg
+      - outdoors2.jpg
+      - outdoors3.jpg
+      - outdoors4.jpg
+      - outdoors5.jpg
+      - outdoors6.jpg
+      - outdoors7.jpg
+      - outdoors8.jpg
+      - outdoors9.jpg
+      - outdoors10.jpg
+
+
+#bedroom:
+#  photos:
+#    - file: bedroom1.jpg
+#      desc: asdfasdfads
+#    - file: bedroom2.jpg
+#      desc: asdfdsf
+#    - file: bedroom3.jpg
+#      name: asdfadsf
+#    - file: bedroom4.jpg
+#      name: adsfasdf
+#    - file: bedroom5.jpg
+#      name: adfadsf

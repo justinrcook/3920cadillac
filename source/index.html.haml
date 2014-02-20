@@ -1,0 +1,16 @@
+- content_for(:title, 'Home')
+
+.container
+  = partial 'carousel', locals: { path: 'carousel', photos: ['house.jpg', 'kitchen.jpg', 'porch.jpg'] }
+  .row
+    .col-md-3
+      .quick-look
+        = partial 'quick-look'
+      .measurements
+        = partial 'measurements'
+    .col-sm-12.col-md-9
+      - data.house.rooms.each_slice(3).each do |rooms|
+        = partial 'rooms', locals: { rooms: rooms }
+
+      = partial 'overview'
+      = partial 'contact-us'

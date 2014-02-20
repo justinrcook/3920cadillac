@@ -1,0 +1,8 @@
+.row
+  - rooms.each do |room|
+    .room
+      = link_to "/rooms/#{room[:name]}.html" do
+        %p= image_tag "small/#{room[:name]}.jpg", alt: room, class: 'img-responsive', style: 'width: 100%;'
+        %p.clearfix
+          %button.btn-room View #{room[:name].titleize} Photos
+      .clearfix.visible-sm

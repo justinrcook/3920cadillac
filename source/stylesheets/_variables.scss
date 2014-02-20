@@ -1,0 +1,34 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$headings-color: #065382;
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Global text color on `<body>`.
+$text-color: #404041;
+
+//-- Iconography
+//
+//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
+// Turn off bootstrap-sass font helper - https://github.com/thomas-mcdonald/bootstrap-sass/pull/473
+$bootstrap-sass-asset-helper: false;
+$icon-font-path: '/fonts/bootstrap/';
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$brand-primary: #4a91c6;
+$brand-success: #90cd46;    // #7fb53e;
+
+//== Navbar
+//
+//##
+
+$navbar-default-link-color:         #4a91c6;
+$navbar-default-link-hover-color:   darken($navbar-default-link-color, 15%);

@@ -1,0 +1,13 @@
+/ Carousel
+/ ==================================================
+#carousel.carousel.slide{ data: { ride: 'carousel' } }
+  / Controls
+  %ol.controls
+    %li{ class: 'prev', title: 'Previous', data: { target: '#carousel', slide: 'prev' } }
+    %li{ class: 'next', title: 'Next', data: { target: '#carousel', slide: 'next' } }
+    %li{ class: 'pause', title: 'Next', data: { target: '#carousel', slide: 'pause' } }
+
+  .carousel-inner
+    - photos.each_with_index do |photo, i|
+      .item{ class: ('active' if i.zero? ) }
+        = image_tag "#{path}/#{photo}", class: 'img-responsive', alt: ''

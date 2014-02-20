@@ -1,0 +1,157 @@
+//** 3920Cadillac Theme
+
+//** Navbar
+nav {
+  margin-top: 10px;
+
+  hr {
+    color: $brand-primary;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-weight: 700;
+    a.brand {
+      &:hover {
+        text-decoration: none;
+      }
+      padding-top: 25px;
+      padding-right: 50px;
+      background: url("/images/icons/logo.png") no-repeat center right;
+    }
+  }
+
+  .info {
+    @extend .col-sm-6;
+    font-size: $font-size-large;
+
+    .price {
+      color: $brand-success;
+    }
+    .address {
+      color: $brand-primary;
+    }
+  }
+
+  .links {
+    @extend .col-sm-6;
+    @extend .text-right;
+    //font-size: $font-size-large;
+
+    ul {
+      @extend .list-inline;
+
+      li {
+        &:first-child {
+          background: url("/images/icons/map.png") no-repeat center left;
+          padding: 5px 3px 5px 30px;
+        }
+        &:last-child {
+          border-left: 1px solid $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+
+//** Carousel
+#carousel {
+  margin-bottom: 20px;
+}
+
+
+//**
+.quick-look, .measurements, .overview, .contact-us {
+  h2, h3, h4 {
+    text-transform: uppercase;
+  }
+}
+
+.quick-look, .measurements {
+  @extend .col-sm-6;
+  @extend .col-md-12;
+
+  ul {
+    padding-left: 20px;
+  }
+}
+
+
+//** Carousel
+.carousel {
+  .controls {
+    //@extend .carousel-indicators;
+    position: absolute;
+    z-index: 15;
+    top: 10px;
+    right: 10px;
+
+    li {
+      display: inline-block;
+      background: url("/images/icons/carousel-controls.png") no-repeat;
+      width:  22px;
+      height: 22px;
+      cursor: pointer;
+
+      &.prev  { background-position: 0 0; }
+      &.next  { background-position: 0 -22px; }
+      &.pause { background-position: 0 -44px; }
+
+    }
+  }
+}
+
+
+//** Rooms
+.room {
+  @extend .col-xs-12;
+  @extend .col-sm-6;
+  @extend .col-md-4;
+  @extend .text-center;
+  margin-bottom: 20px;
+
+  //** Buttons
+  .btn-room {
+    @extend .btn;
+    @extend .col-md-12;
+    @extend .col-sm-12;
+    @include button-variant(#fff, #7fb53e, #7fb53e);
+    border-radius: 0;
+  }
+
+}
+
+//** Footer
+footer {
+  padding: 30px 0 20px 0;
+  background-color: #404042;
+  color: #fff;
+
+  a, a:hover {
+    color: #fff;
+  }
+
+  .see-the-house, .copyright-stuff {
+    @extend .col-xs-12;
+    @extend .col-md-6;
+
+    ul {
+      @extend .list-unstyled;
+    }
+  }
+
+  .see-the-house {
+    li {
+      &:first-child {
+        text-transform: uppercase;
+        color: #71a6ce;
+        font-size: $font-size-large;
+      }
+    }
+  }
+
+  .copyright-stuff {
+    @extend .text-right;
+  }
+}
