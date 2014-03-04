@@ -1,5 +1,11 @@
 rooms:
   - name: house
+    photos:
+      - house1.jpg
+      - house2.jpg
+      - house3.jpg
+      - house4.jpg
+      - house5.jpg
   - name: bedroom
     photos:
       - bedroom1.jpg
