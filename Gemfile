@@ -17,6 +17,8 @@ gem 'middleman-dotenv'
 # Thumbnail Generator
 gem 'middleman-thumbnailer', github: 'nhemsley/middleman-thumbnailer'
 
+gem 'middleman-deploy'
+
 group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'

@@ -59,10 +59,8 @@ configure :build do
     ga.tracking_id = 'UA-47908424-1'
   end
 
-  # For example, change the Compass output style for deployment
+  # Minify CSS and Javascript on build
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
 
   # Use assets cdn to host images, javascript and stylesheets
@@ -71,10 +69,16 @@ configure :build do
 
   # Enable cache buster
   # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
+
+  # Deployment
+  activate :deploy do |deploy|
+    activate :dotenv, env: '.env.build'
+
+    deploy.build_before = true
+    deploy.method       = :sftp
+    deploy.host         = ENV['domain']
+    deploy.path         = ENV['deploy_path']
+    deploy.user         = ENV['deploy_user']
+    deploy.password     = ENV['deploy_password']
+  end

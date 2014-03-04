@@ -73,6 +73,10 @@ GEM
       rack-test (~> 0.6.1)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1)
+    middleman-deploy (0.1.4)
+      middleman-core (>= 3.0.0)
+      net-sftp
+      ptools
     middleman-dotenv (0.0.2)
       dotenv (~> 0.7.0)
       middleman-core (~> 3.0)
@@ -91,7 +95,10 @@ GEM
     multi_json (1.8.4)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
+    ptools (1.2.2)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
@@ -138,6 +145,7 @@ DEPENDENCIES
   capistrano-rbenv
   haml
   middleman (~> 3.2.2)
+  middleman-deploy
   middleman-dotenv
   middleman-google-analytics
   middleman-livereload (~> 3.1.0)
