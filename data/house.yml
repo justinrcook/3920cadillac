@@ -2,10 +2,14 @@ rooms:
   - name: house
     photos:
       - house1.jpg
-      - house2.jpg
-      - house3.jpg
-      - house4.jpg
       - house5.jpg
+      - house7.jpg
+      - house8.jpg
+      - house9.jpg
+      - house10.jpg
+      - house11.jpg
+      - house12.jpg
+      - house13.jpg
   - name: bedroom
     photos:
       - bedroom1.jpg
@@ -25,11 +29,16 @@ rooms:
       - diningRoom3.jpg
       - diningRoom4.jpg
       - diningRoom5.jpg
+      - diningRoom6.jpg
   - name: bathroom
     photos:
       - bathroom1.jpg
       - bathroom2.jpg
       - bathroom3.jpg
+      - secondBathroom1.jpg
+      - secondBathroom2.jpg
+      - secondBathroom3.jpg
+      - secondBathroom4.jpg
   - name: second-bedroom
     photos:
       - secondBedroom1.jpg
@@ -43,6 +52,10 @@ rooms:
       - kitchen3.jpg
       - kitchen4.jpg
       - kitchen5.jpg
+      - kitchen6.jpg
+      - kitchen7.jpg
+      - kitchen8.jpg
+      - kitchen9.jpg
   - name: living-room
     photos:
       - livingRoom1.jpg
@@ -66,6 +79,7 @@ rooms:
       - familyRoom3.jpg
       - familyRoom4.jpg
       - familyRoom5.jpg
+      - familyRoom7.jpg
   - name: multi-use-room
     photos:
       - multiUseRoom1.jpg
@@ -78,18 +92,19 @@ rooms:
       - multiUseRoom8.jpg
       - multiUseRoom9.jpg
       - multiUseRoom10.jpg
+      - multiUseRoom11.jpg
+      - multiUseRoom12.jpg
   - name: porch-and-yard
     photos:
       - outdoors1.jpg
       - outdoors2.jpg
       - outdoors3.jpg
       - outdoors4.jpg
-      - outdoors5.jpg
-      - outdoors6.jpg
-      - outdoors7.jpg
-      - outdoors8.jpg
-      - outdoors9.jpg
-      - outdoors10.jpg
+      - outdoors11.jpg
+      - outdoors12.jpg
+      - outdoors13.jpg
+      - outdoors14.jpg
+      - outdoors15.jpg
 
 
 #bedroom:
