@@ -2,7 +2,7 @@
 
 .container
   %h1= room[:name].titleize
-  %pre= room['photos']
+
   - unless room['photos'].blank?
     = partial 'carousel', locals: { path: '/images/rooms', photos: room['photos'] }
 
